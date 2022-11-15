@@ -1,0 +1,22 @@
+ul{
+    list-style-type: none; text-align: center;
+    padding: 10px; display: block;
+    border-style: solid;
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: block; padding-left: 30px;
+    padding-right: 30px; text-decoration: none;
+}
+.view{
+    width: 500px;
+    margin-left: 400px;
+}
+.error{
+    color: red;
+}
+.geo{
+    padding-left: 50px;
+}
