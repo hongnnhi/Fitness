@@ -1,7 +1,7 @@
 ul{
     list-style-type: none; text-align: center;
     padding: 10px; display: block;
-    border-style: solid;
+    border-style: solid;   
 }
 li{
     display: inline-block;
@@ -17,9 +17,21 @@ li a{
 .error{
     color: red;
 }
-.geo{
-    padding-left: 50px;
-}
 body{
-    background-color: cadetblue;
+    background-color:rgb(165, 165, 239);
 }
+.table1{
+    font-size: 30px;
+    font-style: oblique;
+    width: 50%;
+}
+.backgr{
+    background-image:url("");
+}
+.carousel{
+    width: 1500px;
+    height: 250px;
+}
+
+
+
