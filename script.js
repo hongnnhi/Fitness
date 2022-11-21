@@ -5,7 +5,7 @@ btn.forEach(function(button,index){
       var btnItem = event.target
       var product = btnItem.parentElement
       var productImg = product.querySelector("img").src
-      var productName = product.querySelector("h3").innerText
+      var productName = product.querySelector("H3").innerText
       var productPrice = product.querySelector("p").innerText
     // console.log(productPrice, productImg, productName)
     addcart(productPrice, productImg, productName)
@@ -14,8 +14,9 @@ btn.forEach(function(button,index){
 })
 function addcart(productPrice, productImg, productNam) {
    var addtr = document.createElement("tr")
-   var trcontent = productImg
+   var trcontent = productPrice
    addtr.innerHTML = trcontent
    var cartTable = document.querySelector("tbody")
+   // console.log(cartTable)
    cartTable.append(addtr)
 }
