@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <section class="product">
+        <div class="container">
+            <div class="product_items">
+                <div class="product_item"> 
+                    <img src="doAn/binh1.jpg" alt="" width="200px" height="200px">
+                    <div class="product_item_text">
+                        <p>$2</p>
+                        <h3>binh nuoc 1</h3>
+                        <div>
+                            <button class="but">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_item"> 
+                    <img src="doAn/binh2.jpg" alt="" width="200px" height="200px">
+                    <div class="product_item_text">
+                        <p>$2</p>
+                        <h3>binh nuoc 2</h3>
+                        <div>
+                            <button class="but">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_item"> 
+                    <img src="doAn/binh3.jpg" alt="" width="200px" height="200px">
+                    <div class="product_item_text">
+                        <p>$2</p>
+                        <h3>binh nuoc 3</h3>
+                        <div>
+                            <button class="but">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_item"> 
+                    <img src="doAn/binh4.jpg" alt="" width="200px" height="200px">
+                    <div class="product_item_text">
+                        <p>$2</p>
+                        <h3>binh nuoc 4</h3>
+                        <div>
+                            <button class="but">Add to cart</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <h2>Cart</h2>
+        <form action="">
+            <table>
+                <thead>
+                    <tr>
+                        <th>san pham</th>
+                        <th>gia</th>
+                        <th>so luong</th>
+                        <th>chon.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display: flex; align-items:center"><img src="doAn/binh1.jpg" alt="" width="70px">binh nuoc 1</td>
+                        <td><p>$2</p></td>
+                        <td><input style="width:30px ; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">xoa</td>
+                    </tr>
+                    <tr>
+                        <td style="display: flex; align-items:center"><img src="doAn/binh2.jpg" alt="" width="70px">binh nuoc 1</td>
+                        <td><p>$2</p></td>
+                        <td><input style="width:30px ; outline: none;" type="number" value="1" min="1"></td>
+                        <td style="cursor: pointer;">xoa</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: right;" class="price_total">
+                <p style="font-weight: bold;">tong tien: $2</p>
+            </div>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
