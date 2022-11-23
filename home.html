@@ -6,107 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <div>
-    <ul>
-        <li><img src="logo.png" width="50%" height="50%"></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="view" ng-view ng-controller="myCtrl"> 
-    </div> 
-</div>
-<!-- start carousel -->
-<div class="container">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-  
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="doAn/hinh1.jpg" alt="Los Angeles" >
+      <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Prime Fitness</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>  Log in</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <div class="item">
-          <img src="doAn/hinh2.jpg" alt="Chicago" >
-        </div>
-      
-        <div class="item">
-          <img src="doAn/hinh3.jpg" alt="New york" >
-        </div>
-        <div class="item">
-            <img src="doAn/hinh5.jpg" alt="New york" >
-          </div>
+      </nav>
+      <div class="hding">
+        <img src="doAn/1128335.jpg" width="100%">
+      <div class="slogan">
+        <p class="text">MAKE IT<br><u>OR</u><br> BREAK IT!</p>
+        <button class="book"><a href="#">Book Now</a></button>
       </div>
-  
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
- </div> <!-- end carousel -->
-    <table align="center" class="table1">
-      <div class="bgr">
-      <tr>
-        <td><img src="doAn/gym1.jpg" width="450px" height="620px"></td>
-        <td><p>Fabrice Le Physique</p>
-        <p>"Sport is in my blood," Fabrice said. "I was playing table tennis as soon as I was out of my mother’s womb."</p>
-        </td>
-      </tr>
-      <tr>
-        
-        <td>
-          <p>HANA Giang Anh She is well-known among young people as one of the most well-known female gym coaches in the bodybuilding field. Hana Giang Anh is an online fitness coach in addition to working as a PT at the gym. Her channel on YouTube has 1.16 million subscribers.
-          </p>
-        </td>
-        <td><img src="doAn/gym2.jpg" width="450px" height="620px"></td>
-      </tr>
-      <tr>
-        <td><img src="doAn/gym3.jpg" width="450px" height="620px"></td>
-        <td>Harley Pasternak is a Canadian author. Anh is a well-known example of a diin gia gây cm hng, a tác gia many cun sách, and a dn chng trnh. Kim Kardashian, Megan Fox, Lady Gaga, Ariana Grande, Adam Levine, Kanye West, and Amy Schumer are among the celebrities Harley's khách hàng include.</td>
-      </tr>
-      <tr>
-        <td>Trang Le 23-year-old online fitness trainer, to have strong abs, she often chooses pilates exercises combined with breathing. For the third round, she practiced lunges, squats, deadlifts, gym exercises with heavy weights that gradually increased over time to stimulate the development of the glutes..</td>
-        <td><img src="doAn/gym4.jpg" width="450px" height="620px"></td>
-      </tr>
-      <tr>
-        <td><img src="doAn/yoga.jpg" width="450px" height="620px"></td>
-        <td>Yoga Sophie teaches with heart, enthusiasm and continuous learning, certified as an international yoga teacher by the Asean yoga association. Teachers teach online with thousands of students. Besides, she is also an inspiration to help people practice yoga for a better life. Currently on Sophie's youtube channel there are more than 191,000 subscribers and on the fanpage there are more than 28,000 followers. With these 2 main information pages, people can easily register to try this sport.
-          </td>
-      </tr>
-    </div>
-    </table>
-    <footer>
-    <table class="table2">
-      <tr>
-        <td rowspan="3">
-          <div class="geo">
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2649733263165!2d77.69578321482184!3d12.954889090866839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae13a47cd0a5c3%3A0x6e8909db0ccf9319!2sPRIME%20FITNESS%20CLUB(The%20Largest%20GYM%20In%20Marathahalli)!5e0!3m2!1sen!2shk!4v1668498287507!5m2!1sen!2shk" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+        <h2>Our Classes</h2>
+        <div class="class"> 
+          <table class="table table-hover">
+            <tr>
+              <td><a href="#">Cycling</a></td>
+              <td>60 mins</td>
+              <td><button class="book"><a href="#">Book Now</a></button></td>
+            </tr>
+            <tr>
+              <td><a href="#">Kickboxing</a></td>
+              <td>60 mins</td>
+              <td><button class="book"><a href="#">Book Now</a></button></td>
+            </tr>
+            <tr>
+              <td><a href="#">HIIT</a></td>
+              <td>45 mins</td>
+              <td><button class="book"><a href="#">Book Now</a></button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="table-respons">
+          <table class="trainer">
+            <tr>
+              <td><img src="doAn/yoga.jpg" alt="" class="hlv"></td>
+              <td class="para">
+                <h1>Yoga by Sophie</h1><br>
+                <p>Sophie, a Yoga teacher teaches with heart, enthusiasm and continuous learning, certified as an international yoga teacher by the Asean yoga association. Teachers teach online with thousands of students. Besides, she is also an inspiration to help people practice yoga for a better life. Currently on Sophie's youtube channel there are more than 191,000 subscribers and on the fanpage there are more than 28,000 followers. With these 2 main information pages, people can easily register to try this sport.</p><br>
+                <button class="book">More Trainers</button>
+              </td>
+            </tr>
+          </table>
+        </div><br><br>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">our services</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Online shop</h4>
+              <ul>
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Circuit Training</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact us</h4>
+              <ul class="contact">
+                <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+                <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+                  Tulsi Theater Rd, Marathahalli, Bengaluru,
+                  Karnataka 560037, India </li>
+                <li></li>
+              </ul>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td>      
-          Hotline: 0923462724
-          <p>Email: fitness@gmail.com</p>
-        </td>
-      </tr>           
-    </table>
-  </footer>   
+        </div>
+        <hr>
+        <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+     </footer>
 </body>
 </html>
