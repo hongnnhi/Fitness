@@ -462,3 +462,19 @@ li a{
     width: 1500px;
     height: 250px;
 }
+/*-----------shop---------*/
+.nameGiay{
+  font-weight: 25;
+  font-size: 20px;
+  font-style: italic;
+  color: #242526;
+}
+.tien{
+  color: darkkhaki;
+  font-weight: 800;
+  font-size: 30px;
+}
+button
+{
+  font-size: 25px;
+}
