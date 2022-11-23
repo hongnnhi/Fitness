@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <script src="angular.min.js"></script>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
     <style>
         table{
             width: 100%;
@@ -45,14 +48,51 @@
     </style>
 </head>
 <body>
-    
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Prime Fitness</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>  Log in</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
     <table class="table table-hover">
             <tr>
                 <td rowspan="2" class="the1td">
-                    <p class="font"><a href="shop2.html">Equipment</a><br></p>
-                    <p class="font"><a href="">Training Shoes</a></p>
-                    <p class="font"><a href="">Bottle</a></p>
-                    <p class="font">  <a href="">Protein Powder</a></p>
+                    <p class="font"><a href="dungcuShop.html">Equipment</a><br></p>
+                    <p class="font"><a href="giayShop.html">Training Shoes</a></p>
+                    <p class="font"><a href="bottleShop.html">Bottle</a></p>
+                    <p class="font">  <a href="thucphamShop.html">Protein Powder</a></p>
                 </td>
                 <td>
                     <figure>
@@ -130,6 +170,55 @@
                 </td>
             </tr>
         </table>
-    
+        <footer class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>About us</h4>
+                  <ul>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">our services</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Online shop</h4>
+                  <ul>
+                    <li><a href="#">Bottle</a></li>
+                    <li><a href="#">Equipment</a></li>
+                    <li><a href="#">Training Shoes</a></li>
+                    <li><a href="#">Protein Powder</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Services</h4>
+                  <ul>
+                    <li><a href="#">Circuit Training</a></li>
+                    <li><a href="#">Cycling</a></li>
+                    <li><a href="#">Kickboxing</a></li>
+                    <li><a href="#">Yoga</a></li>
+                    <li><a href="#">Personal Training</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Contact us</h4>
+                  <ul class="contact">
+                    <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+                    <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+                      Tulsi Theater Rd, Marathahalli, Bengaluru,
+                      Karnataka 560037, India </li>
+                    <li></li>
+                  </ul>
+                  <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+         </footer>
 </body>
 </html>
