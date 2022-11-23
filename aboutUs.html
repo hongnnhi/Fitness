@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+   <style>
+ul{
+    list-style-type: none; text-align: center;
+    padding: 10px; display: block;
+    border-style: solid;   
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: block; padding-left: 30px;
+    padding-right: 30px; text-decoration: none;
+}
+.view{
+    width: 500px;
+    margin-left: 400px;
+}
+.error{
+    color: red;
+}
+body{
+    background-color:rgb(165, 165, 239);
+}
+.table1{
+    font-size: 30px;
+    font-style: oblique;
+    width: 50%;
+}
+.backgr{
+    background-image:url("");
+}
+    .carousel{
+    width: 1500px;
+    height: 250px;
+}
+footer{
+    background-color: gray;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#">Prime Fitness</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+              <a href="#" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#"><i class="glyphicon glyphicon-user"></i>  Log in</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>About us</h4>
+          <ul>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">our services</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Online shop</h4>
+          <ul>
+            <li><a href="#">Bottle</a></li>
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">Training Shoes</a></li>
+            <li><a href="#">Protein Powder</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Circuit Training</a></li>
+            <li><a href="#">Cycling</a></li>
+            <li><a href="#">Kickboxing</a></li>
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Personal Training</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact us</h4>
+          <ul class="contact">
+            <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+            <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+              Tulsi Theater Rd, Marathahalli, Bengaluru,
+              Karnataka 560037, India </li>
+            <li></li>
+          </ul>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+ </footer>
+</body>
+</html>
