@@ -23,6 +23,13 @@ nav{
     font-weight: 600;
     text-decoration: none;
   }
+  .wrapper .logo .log{
+    width: 300px;
+    height:auto;
+    position: relative;
+    left:-10px;
+
+  }
   .wrapper .nav-links{
     display: inline-flex;
   }
@@ -358,6 +365,11 @@ nav{
         position: relative;
         width: 100%;
     }
+    .wrapper .logo .log{
+      width: 200px;
+      height: auto;
+
+    }
     .text{
         font-size: 500%;
         color: white;
@@ -406,75 +418,23 @@ nav{
         padding: 100px;
         background-color: #24262b;
         color:white;
+        font-size: 15px;
     }
-    table{
-      padding: 200px;
+    .trainer .para h1{
+      font-size: 70px;
+    }
+    .sell{
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .sell .row-1{
+      padding: 50px;
     }
     figcaption{
       padding-bottom: 50px;
+      font-size: 20px;
+      text-align: center;
     }
   
 
-    img{ margin: 100px;}
-        
-        #phong{
-transition: all 1s ease;
--webkit-transition: all 1s ease;
--moz-transition: all 1s ease;
--o-transition: all 1s ease;
-}
- 
-#phong:hover{
-transform: scale(1.5,1.5);
--webkit-transform: scale(1.5,1.5);
--moz-transform: scale(1.5,1.5);
--o-transform: scale(1.5,1.5);
--ms-transform: scale(1.5,1.5);
-}
-ul{
-    list-style-type: none; text-align: center;
-    padding: 10px; display: block;
-    border-style: solid;   
-}
-li{
-    display: inline-block;
-}
-li a{
-    display: block; padding-left: 30px;
-    padding-right: 30px; text-decoration: none;
-}
-.view{
-    width: 500px;
-    margin-left: 400px;
-}
-.error{
-    color: red;
-}
-.table1{
-    font-size: 30px;
-    font-style: oblique;
-    width: 50%;
-}
-.backgr{
-    background-image:url("");
-}
-.carousel{
-    width: 1500px;
-    height: 250px;
-}
-/*-----------shop---------*/
-.nameGiay{
-  font-weight: 25;
-  font-size: 20px;
-  font-style: italic;
-  color: #242526;
-}
-.tien{
-  color: darkkhaki;
-  font-weight: 800;
-  font-size: 30px;
-}
-button
-{
-  font-size: 25px;
-}
+    
