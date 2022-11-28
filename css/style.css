@@ -437,4 +437,54 @@ nav{
     }
   
 
+<<<<<<< Updated upstream:css/style.css
     
+=======
+    img{ margin: 100px;}
+        
+        #phong{
+transition: all 1s ease;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+}
+ 
+#phong:hover{
+transform: scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+-moz-transform: scale(1.5,1.5);
+-o-transform: scale(1.5,1.5);
+-ms-transform: scale(1.5,1.5);
+}
+ul{
+    list-style-type: none; text-align: center;
+    padding: 10px; display: block;
+    border-style: solid;   
+}
+li{
+    display: inline-block;
+}
+li a{
+    display: block; padding-left: 30px;
+    padding-right: 30px; text-decoration: none;
+}
+.view{
+    width: 500px;
+    margin-left: 400px;
+}
+.error{
+    color: red;
+}
+.table1{
+    font-size: 30px;
+    font-style: oblique;
+    width: 50%;
+}
+.backgr{
+    background-image:url("");
+}
+.carousel{
+    width: 1500px;
+    height: 250px;
+}
+>>>>>>> Stashed changes:style.css
