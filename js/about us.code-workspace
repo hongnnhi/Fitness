@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../đồ án/about us"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Fitness"
+	}
+}
