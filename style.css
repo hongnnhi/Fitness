@@ -3,7 +3,6 @@ nav{
     position: fixed;
     z-index: 99;
     width: 100%;
-    
     background: #242526;
   }
   nav .wrapper{
@@ -22,6 +21,12 @@ nav{
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
+  }
+  .wrapper .logo .log{
+    width: 180px;
+    height:auto;
+    position: relative;
+    left:-10px;
   }
   .wrapper .nav-links{
     display: inline-flex;
@@ -54,8 +59,7 @@ nav{
     visibility: hidden;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
   }
-  .nav-links li:hover .drop-menu,
-  .nav-links li:hover .mega-box{
+  .nav-links li:hover .drop-menu{
     transition: all 0.3s ease;
     top: 70px;
     opacity: 1;
@@ -67,54 +71,6 @@ nav{
     padding: 0 0 0 15px;
     font-weight: 400;
     border-radius: 0px;
-  }
-  .mega-box{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    padding: 0 30px;
-    top: 85px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  .mega-box .content{
-    background-color: #24262b;
-    padding: 25px 20px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  }
-  .mega-box .content .row{
-    width: calc(25% - 30px);
-    line-height: 45px;
-  }
-  .content .row img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .content .row header{
-    color: #f2f2f2;
-    font-size: 20px;
-    font-weight: 500;
-  }
-  .content .row .mega-links{
-    margin-left: -40px;
-    border-left: 1px solid rgba(255,255,255,0.09);
-  }
-  .row .mega-links li{
-    padding: 0 20px;
-  }
-  .row .mega-links li a{
-    padding: 0px;
-    padding: 0 20px;
-    color: #d9d9d9;
-    font-size: 17px;
-    display: block;
-  }
-  .row .mega-links li a:hover{
-    color: #f2f2f2;
   }
   .wrapper .btn{
     color: #fff;
@@ -146,7 +102,6 @@ nav{
       box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
       transition: all 0.3s ease;
     }
-    /* custom scroll bar */
     ::-webkit-scrollbar {
       width: 10px;
     }
@@ -185,8 +140,7 @@ nav{
       box-shadow: none;
       transition: all 0.3s ease;
     }
-    #showDrop:checked ~ .drop-menu,
-    #showMega:checked ~ .mega-box{
+    #showDrop:checked ~ .drop-menu{
       max-height: 100%;
     }
     .nav-links .desktop-item{
@@ -212,43 +166,138 @@ nav{
       border-radius: 5px;
       font-size: 18px;
     }
-    .mega-box{
-      position: static;
-      top: 65px;
-      opacity: 1;
-      visibility: visible;
-      padding: 0 20px;
-      max-height: 0px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    .mega-box .content{
-      box-shadow: none;
-      flex-direction: column;
-      padding: 20px 20px 0 20px;
-    }
-    .mega-box .content .row{
-      width: 100%;
-      margin-bottom: 15px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-    }
-    .mega-box .content .row:nth-child(1),
-    .mega-box .content .row:nth-child(2){
-      border-top: 0px;
-    }
-    .content .row .mega-links{
-      border-left: 0px;
-      padding-left: 15px;
-    }
-    .row .mega-links li{
-      margin: 0;
-    }
-    .content .row header{
-      font-size: 19px;
-    }
   }
   nav input{
     display: none;
+  }
+  .banner{
+    position: relative;
+  }
+  .banner .col-sm-4{
+    position: absolute;
+    top: 15.5%;
+    left: 15.5%;
+    color: white;
+  }
+  .banner h2{
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 1000;
+  }
+  .banner p{
+    font-size: 1.5vw;
+    font-weight: 10;
+  }
+  .banner button{
+    width: 8vw;
+    display: inline-block;
+    font-size: 1.25vw;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background:linear-gradient(to right, #000000, #ffffff);
+    margin: 4px 2px;
+    border-radius: 16px; 
+    cursor: pointer;
+    transition: width 0.1s;
+  }
+  button img{
+    width: 2vw;
+    display: none;
+  }
+  .banner button:hover img{
+    display: inline-block;
+  }
+  .banner button:hover{
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner button a{
+    text-decoration: none;
+    color: orangered;
+  }
+  .banner button a:hover{
+        color:#e91e63;
+  }
+  .class{
+    text-align: center;
+    font-size: 24px;
+    
+  }
+  .class a{
+    text-decoration: none;
+    color: black;
+  }
+  .class a:hover{
+    text-decoration: underline;
+  }
+  .class .book{
+    border: none;
+    border-radius: 16px;
+    background-color: darkgray;
+  }
+  .class .book:hover{
+    background-color: gray;
+  }
+  .class .book a{
+    margin: 10px;
+  }
+  .trainer{
+    margin: 50px;
+  }
+  .trainer .para{
+    padding:100px;
+    background-color: #242526 ;
+    color: white;
+  }
+  .para p{
+    font-size: 15px;
+  }
+  .para button{
+    background-color: darkgray;
+    border-radius: 16px;
+    border: none;
+    width:150px;
+  }
+  .para button:hover{
+    background-color: gray;
+  }
+  .para button a{
+    text-decoration: none;
+    margin:10px;
+    color:black;
+  }
+  .para button a:hover{
+    text-decoration: underline;
+  }
+  h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: bolder;
+    padding:50px;
+  }
+  .best{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sell td{
+    padding: 20px;
+  }
+  .sell img{
+    width: 300px;
+    transition: transform .2s;
+  }
+  .sell img:hover{
+    -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  }
+  .sell figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
   }
     body{
         line-height: 1.5;
@@ -260,7 +309,7 @@ nav{
         box-sizing: border-box;
     }
     .container{
-        max-width: 1170px;
+        max-width: 1300px;
         margin:auto;
     }
     .row{
@@ -271,7 +320,7 @@ nav{
         list-style: none;
     }
     .footer{
-        background-color: #24262b;
+        background-color: #242526;
         padding: 70px 0;
     }
     .footer-col{
@@ -336,14 +385,7 @@ nav{
         color: #24262b;
         background-color: #ffffff;
     }
-   .copy{
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    }
-    
-    /*responsive*/
-    @media(max-width: 767px){
+    @media(max-width: 970px){
       .footer-col{
         width: 50%;
         margin-bottom: 30px;
@@ -354,62 +396,8 @@ nav{
         width: 100%;
     }
     }
-    .hding{
-        position: relative;
-        width: 100%;
-    }
-    .text{
-        font-size: 500%;
+    .copy{
+        font-size: 16px;
         color: white;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        letter-spacing: 10px;
-    }
-    .slogan{
-        position: absolute;
-        left: 20%;
-        top: 20%;
-    }
-    .book{
-        border-style: none;
-        width: 110px;
-        height: 60px;
-        background-color: darkgrey;
-    }
-    .book a{
-        text-decoration: none;
-        color: black;
-        font-size: 15px;
-    }
-    h2{
         text-align: center;
-        font-weight: bold;
-        font-size: 90px;
-        padding: 100px;
-    }
-    .class{
-        text-align: center;
-        display: block;
-        font-size: 25px;
-    }
-    table a{
-        text-decoration: none;
-        color: black;
-    }
-    .trainer{
-        margin-top: 100px;
-    }
-    .trainer .hlv{
-        width: 700px;
-        height: auto;
-    }
-    .trainer .para{
-        padding: 100px;
-        background-color: #24262b;
-        color:white;
-    }
-    table{
-      padding: 200px;
-    }
-    figcaption{
-      padding-bottom: 50px;
-    }
+        }
