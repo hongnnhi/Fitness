@@ -4,223 +4,437 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <script src="angular.min.js"></script>
+    <title>Online Shop</title>
+    <script src="js/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2? family= Roboto+Mono:ital,wght@1,300 & display=swap');
-    *{
-    margin: 0;
-    padding: 0;
-}
-img{
-    width: 100px;
-    height: 100px;
-}
-body{
-    font-size: 14px;
-    font-family: 'Courier New', Courier, monospace;
-    line-height:1.15;
-    color: #111;
-    background-color: rgb(162, 172, 172);
-}
-#wrapper{
-    max-width: 1170px;
-    margin: 0 auto;
-}
-h3{
-    font-size: 18px;
-    color:#111;
-    padding:10px 20px ;
-    text-transform: uppercase;
-    border: 1px solid;
-    display: inline-block;
-    color: #555;
-    font-weight: 600;
-}
-.headline{
-    text-align: center;
-    margin: 40px 0px;
-}
-ul.products{
-    list-style:none;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-.ul.products li{
-    flex-basis: 25%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-}
-.product-item{
-    width: 292.5px;
-    margin-bottom: 30px;
-}
-.products li img{
-    max-width: 100%;
-    height: auto;
-}
-a.buy-now{
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    background-color: #445084;
-    color: #fff;
-    padding: 10ppx 0px;
-}
-.products li .product-info a{
-    display: block;
-    text-decoration: none;
-}
-.products li .product-info a.product-cat{
-    font-size: 11px;
-    text-transform:uppercase;
-    color: #9e9e9e;
-    padding: 3px 0px;
-}
-.products li .product-info a.product-name{
- color: #334862;
- padding: 3px 0px;
-}
-.products li .product-info a.product-price{
-    color: #111;
-    padding: 2px 0px;
-    font-weight: 600;
-}
-</style>
 <body>
-    <div id="wrapper">
-        <div class="headline">
-            <h3>Sản phẩm bán chạy</h3>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li>
+              <a href="#" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
-        <ul class="products">
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh1.jpg" alt="">
-                            <a href="" class="product-name"></a></br><br>
-                        <button><a href="" class="buy-now">Buy Now</a></button>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh2.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh3.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh4.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh1.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh1.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh1.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="product-item">
-                    <div class="product-top">
-                        <a href="" class="product-thumb">
-                            <img src="doAn/binh1.jpg" alt="">
-                            <a href="" class="product-name"></a>
-                        </a>
-                        <a href="" class="buy-now">Buy Now</a>
-                    </div>
-                    <div class="product-info">
-                        <a href="" class="product_cat">Bags</a>
-                        <div class="product-price">$2</div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+      </nav><br><br><br><br>
+      <section class="shop">
+        <div class="product">
+         
+          <table class="table table-responsive">
+            <tr>
+                <td colspan="3"><h3>Bottles</h3></td>
+            </tr>
+            <tr>
+              <td><figure>
+                <a href=""><img src="imgs/bottle1.jpg" class="anhBottle" alt=""></a>
+                <figcaption>
+                    <p >Hydro Flask Wide Mouth Straw Lid</p>
+                    <p>$49</p>
+                    <button type="">
+                        add to cart
+                    </button>
+                </figcaption>
+              </figure></td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/bottle2.jpg" class="anhBottle" alt=""></a>
+                  <figcaption>
+                      <p >Blender Bottle Hydration Halex Squeeze Water Bottle with Straw</p>
+                      <p >$12</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/bottle3.jpg" class="anhBottle" alt=""></a>
+                  <figcaption>
+                      <p>Zulu Atlas Glass Water Bottle with Silicone Sleeve</p>
+                      <p >$16</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td><figure>
+                <a href=""><img src="imgs/bottle3.jpg" class="anhBottle" alt=""></a>
+                <figcaption>
+                    <p>Zulu Atlas Glass Water Bottle with Silicone Sleeve</p>
+                    <p>$16</p>
+                    <button type="">
+                        add to cart
+                    </button>
+                </figcaption>
+              </figure></td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/bottle5.jpg" class="anhBottle" alt=""></a>
+                  <figcaption>
+                      <p>Takeya, White Originals Vacuum-Insulated Stainless-Steel Water Bottle </p>
+                      <p class="tien">$27.99</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/bottle6.jpg" class="anhBottle" alt="" ></a>
+                  <figcaption>
+                      <p>Under Armour 16oz Protégé Water Bottle, Stainless Steel, Vacuum Insulated,
+                         Leak Resistant Lid, Self Draining Cap, For Kids & Adults</p>
+                      <p   >$25</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+        </div>
+        <div class="product">
+
+          <table class="table table-responsive">
+            <tr>
+                <td colspan="3"><h3>Training Equipment</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu1.webp" alt=""></a>
+                  <figcaption>
+                      <p>Spinning Pace Connected Spinner Bike</p>
+                      <p class="tien">$595.00</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu2.webp" alt=""></a>
+                  <figcaption>
+                      <p>YORK Barbell Perform Home Gym</p>
+                      <p class="tien">$970.00</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu3.webp " alt=""></a>
+                  <figcaption>
+                      <p>York Barbell Single Kettlebell Black 5lb-80lb</p>
+                      <p class="tien">$23.00</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu4.jpg" alt=""></a>
+                  <figcaption>
+                      <p>Vaunn Medical Folding Pedal Exerciser with Electronic Display for Legs and Arms Workout</p>
+                      <p>$48</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu5.jpg" alt=""></a>
+                  <figcaption>
+                      <p>Everlast Mixed Martial Arts Heavy Bag Gloves</p>
+                      <p class="tien">$31.99</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/dcu6.jpg" alt=""></a>
+                  <figcaption>
+                      <p>SKIPPING-ROPE</p>
+                      <p class="tien">$10</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="product">
+          <table class="table table-responsive">
+            <tr>
+                <td colspan="3"><h3>Training Shoes</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay1.webp" alt=""></a>
+                  <figcaption>
+                      <p>Nike Metcon 8 MF</p>
+                      <p class="tien">$154.11</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay2.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Nike Metcon 8</p>
+                      <p class="tien">$154.11</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay3.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Nike Metcon 8</p>
+                      <p class="tien">$154.11</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay4.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Nike Defy All Day</p>
+                      <p class="tien">$76.83</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay4.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Nike Defy All Day</p>
+                      <p class="tien">$76.83</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/giay6.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Nike MC Trainer</p>
+                      <p class="tien">$83.27</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+        </div>
+        <div class="product">
+          
+          <table class="table table-responsive">
+            <tr>
+                <td colspan="3"><h3>Protein Powder</h3></td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn1.webp" alt=""></a>
+                  <figcaption>
+                      <p>Ostrovit Vege Protein</p>
+                      <p>$23.7</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn2.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Hush & Hush Plant Your Day</p>
+                      <p>$90.5</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn3.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Rule1 Protein Isolate 2.5Lbs</p>
+                      <p class="tien">$48.2</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn4.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Serious Mass </p>
+                      <p class="tien">$43.83</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn5.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Zprotein 5lbs</p>
+                      <p class="tien">$74</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+              <td>
+                <figure>
+                  <a href=""><img src="imgs/tpcn6.webp" alt=""></a>
+                  <figcaption>
+                      <p   >Pure Whey</p>
+                      <p class="tien">$63.5</p>
+                      <button type="">
+                          add to cart
+                      </button>
+                  </figcaption>
+                </figure>
+              </td>
+            </tr>
+        </div>
+      </section><br><br><br><br><br>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Online shop</h4>
+              <ul>
+                <li><a href="#">Bottles</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact us</h4>3
+              <ul class="contact">
+                <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+                <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+                  Tulsi Theater Rd, Marathahalli, Bengaluru,
+                  Karnataka 560037, India</li>
+                <li></li>
+              </ul>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+     </footer>
 </body>
 </html>
