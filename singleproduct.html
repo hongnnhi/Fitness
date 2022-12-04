@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css" type="text/css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Custom css - Các file css do chúng ta tự viết -->
+    <link rel="stylesheet" href="../assets/css/product-detail.css" type="text/css">
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+   <style>
+    #cart:hover {
+  border-color: #fff;
+}    
+   </style>
+</head>
+
+<body>
+   
+    <nav>
+        <div class="wrapper">
+<div class="logo"><a href="#">Prime Fitness</a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="#">Home</a></li>
+<li><a href="#">About Us</a></li>
+            <li>
+              <a href="#" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>  Log in</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav>
+
+   
+            <div class="card">
+                <div class="container-fliud">
+                    <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post"
+                        action="/php/twig/frontend/giohang/themvaogiohang">
+                        <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                        <input type="hidden" name="sp_ten" id="sp_ten" value="Samsung Galaxy Tab 10.1 3G 16G">
+                        <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00">
+                        <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="samsung-galaxy-tab-10.jpg">
+
+                        <div class="wrapper row">
+                            <div class="preview col-md-6">
+                                <div class="preview-pic tab-content">
+                                    <div class="tab-pane" id="pic-1">
+                                        <img src="">
+                                    </div>
+                                    <div class="tab-pane" id="pic-2">
+                                        <img src="whey-protein-b11d4a67-184f-4765-9ac4-76895e066309.webp">
+                                    </div>
+                                    <div class="tab-pane active" id="pic-3">
+                                        <img src="449202a8927e4b20126f.jpeg">
+                                    </div>
+                                </div>
+                                <ul class="preview-thumbnail nav nav-tabs">
+                                    <li class="active">
+                                        <a data-target="#pic-1" data-toggle="tab" class="">
+                                            <img src="">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-2" data-toggle="tab" class="">
+                                            <img src="faae5c97cd41141f4d50.jpeg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-3" data-toggle="tab" class="active">
+                                            <img src="2a1986b42362fa3ca373.jpeg">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="details col-md-6">
+                                <h3 class="product-title">muscle gain</h3>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no">999 reviews</span>
+                                </div>
+                                <p class="product-description">Whey Gold Standard On builds lean muscle.<br>Rapid muscle recovery, preventing muscle deterioration.Increasing nutrient absorption, increasing resistance, stabilizing your digestive system.</p>
+                                <small class="text-muted">Old price: <s><span>2.214,00 USD</span></s></small>
+                                <h4 class="price">Current price: <span>2.214,00 USD</span></h4>
+                                <p class="vote"><strong>100%</strong> row <strong>quality</strong>,guaranteed
+                                    <strong>reputation</strong>!</p>
+                                <h5 class="sizes">sizes:
+                                    <span class="size" data-toggle="tooltip" title="cỡ Nhỏ">s</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Trung bình">m</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Lớn">l</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Đại">xl</span>
+                                </h5>
+                                <h5 class="colors">colors:
+                                    <span class="color orange not-available" data-toggle="tooltip"
+                                        title="Hết hàng"></span>
+                                    <span class="color green"></span>
+                                    <span class="color blue"></span>
+                                </h5>
+                                <div class="form-group">
+                                    <label for="soluong">quantity ordered:</label>
+                                    <input type="number" class="form-control" id="soluong" name="soluong">
+                                </div>
+                               
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <ul>
+                    <li>
+                <button id="cart" style="font-size: 15px;
+                color: #fff;
+                background: #c7b200;
+                border: 1px solid transparent;
+                border-radius: 10px;
+                outline: none;
+                margin-left: 1rem;
+                padding: 12px;
+                cursor: pointer;">
+                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                  buying
+                </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">buying</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">product</span>
+                                <span class="cart-price cart-header cart-column">price</span>
+                                <span class="cart-quantity cart-header cart-column">Amount</span>
+                            </div>
+                            <div class="cart-items">
+    
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">total:</strong>
+                                <span class="cart-total-price">2.214,00 usd</span>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary close-footer">close</button>
+                            <button type="button" class="btn btn-primary order">pay</button>
+                        </div>
+                    </ul>
+                        </li>
+                    </div>
+                </div>
+
+
+    
+    
+ <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">our services</a></li>
+              </ul>
+</div>
+            <div class="footer-col">
+<h4>Online shop</h4>
+              <ul>
+                <li><a href="#">Bottle</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Circuit Training</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact us</h4>
+              <ul class="contact">
+                <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+                <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+                  Tulsi Theater Rd, Marathahalli, Bengaluru,
+                  Karnataka 560037, India </li>
+                <li></li>
+              </ul>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+     </footer>
+     <script>
+        // Modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("cart");
+var close = document.getElementsByClassName("close")[0];
+var close_footer = document.getElementsByClassName("close-footer")[0];
+var order = document.getElementsByClassName("order")[0];
+btn.onclick = function () {
+  modal.style.display = "block";
+}
+close.onclick = function () {
+  modal.style.display = "none";
+}
+close_footer.onclick = function () {
+  modal.style.display = "none";
+}
+order.onclick = function () {
+  alert("Cảm ơn bạn đã thanh toán đơn hàng")
+}
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</body>
+
+</html>
