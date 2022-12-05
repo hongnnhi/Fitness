@@ -14,11 +14,11 @@ Student1409156  Nguyên Trung Nguyên
 Student1409130  Nguyễn Đức Tú
 ============================
 
-eProject documentation at https://github.com/lnnhi1310/Kitchen-Appliances/tree/main/documentary
+eProject documentation at https://github.com/hongnnhi/Fitness/tree/main/Document
 
 ============================
 
-eProject published at https://lnnhi1310.github.io/Kitchen-Appliances/index.html
+eProject published at https://hongnnhi.github.io/Fitness/
 
 ============================
 
