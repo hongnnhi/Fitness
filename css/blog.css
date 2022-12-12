@@ -1,0 +1,66 @@
+.blog-section{
+    padding-bottom:50px;
+}
+.spad{
+    padding-top: 100px;
+}
+/* @media  screen  (min-width: 1200px) */
+/* .container{
+max-width: 1170px;
+} */
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: -15px;
+    margin-left:-15px;
+}
+.col-lg-4{
+    flex:0 0 33.333333%;
+    max-width:33.333333%;
+}
+.col-md-6{
+    flex:0 0 50%;
+    max-width:50%;
+}
+.col, .col-lg-10, .col-lg-12, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9, .col-md-4, .col-md-6{
+    position:relative;
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+}
+.single-blog-item{
+    margin-bottom:42px;
+}
+.single-blog-item .blog-widget{
+    margin-bottom:10px;
+}
+.single-blog-item .blog-widget .bw-date{
+    font-size:14px;
+    color:#bdbdbd;
+    display:inline-block;
+    margin-right:8px;
+}
+.single-blog-item .blog-widget .tag{
+    font-size: 14px;
+    color:#f15d44;
+}
+a{
+    color:#007bff;
+    text-decoration:none;
+    background-color: transparent;
+}
+.single-blog-item h4 a{
+    color: #111111;
+    font-weight:600;
+    line-height:30px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+code, pre, samp {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    font-size: 1em;
+}

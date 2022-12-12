@@ -1,0 +1,31 @@
+.shop .product h3{
+    text-align: center;
+    font-size: 65px;
+    padding-top: 40px;
+}
+.shop{ 
+    position: relative;
+    text-align: center;
+    padding-left: 150px;
+}
+.shop .product figcaption{
+    text-align: center;
+    font-size: 15px;
+}
+.shop .product .anhBottle{
+    width:150px;
+    height: 350px;
+    padding-bottom: 30px;
+    
+}
+.shop .product img{
+    width: 300px;
+    padding: 20px;
+}
+.shop .product .table{
+    padding: 100px;
+}
+.shop .product .table td{
+    width: 400px;
+    padding: auto;
+}

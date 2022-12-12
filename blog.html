@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <script src="js/angular.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <style>
+        @font-face{font-family:'FontAwesome';src:url('../fonts/fontawesome-webfont.eot?v=4.7.0');src:url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.fa-heart:before{content:"\f004"}.fa-user:before{content:"\f007"}.fa-home:before{content:"\f015"}.fa-twitter:before{content:"\f099"}.fa-facebook:before{content:"\f09a"}.fa-pinterest:before{content:"\f0d2"}.fa-google-plus:before{content:"\f0d5"}.fa-angle-left:before{content:"\f104"}.fa-angle-right:before{content:"\f105"}.fa-youtube-play:before{content:"\f16a"}.fa-instagram:before{content:"\f16d"}.fa-dribbble:before{content:"\f17d"}.fa-send:before{content:"\f1d8"}
+
+        element.style {
+            background-image: url(imgs/blog.webp);
+        }
+        .blog-section {
+            padding-bottom: 50px;
+            background-color:aliceblue;
+        }
+        .spad {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .breadcrumb-section{
+            padding-top: 190px;
+            height: 400px;
+        }
+        .set-bg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top center;
+        }
+        figcaption, figure, footer, header, main, nav, section {
+            display: block;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        /* element.style {
+        } */
+        @media only screen and (min-width: 1200px){}
+        .container_blog {
+            max-width: 1170px;
+        }
+        @media (min-width: 1200px){}
+        .container_blog {
+            max-width: 1140px;
+        }
+        @media (min-width: 992px){}
+        .container_blog {
+            max-width: 960px;
+        }
+        @media (min-width: 768px){}
+        .container_blog {
+            max-width: 720px;
+        }
+        @media (min-width: 576px){}
+        .container_blog {
+            max-width: 540px;
+        }
+        @media (min-width: 1200px){}
+        .container_blog {
+            max-width: 1140px;
+        }
+        @media (min-width: 992px){}
+        .container_blog {
+            max-width: 960px;
+        }
+        @media (min-width: 768px){}
+        .container_blog {
+            max-width: 720px;
+        }
+        @media (min-width: 576px){}
+        /* .concontainer_blogtainer {
+            max-width: 540px;
+        } */
+        .container_blog {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        @media (min-width: 992px){}
+        .col-lg-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        @media (min-width: 992px){}
+        .col-lg-4 {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+        @media (min-width: 768px){}
+        .col-md-6 {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .col, .col-lg-10, .col-lg-12, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-8, .col-lg-9, .col-md-4, .col-md-6 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .breadcrumb-text {
+            text-align: center;
+        }
+        .breadcrumb-text h2 {
+            font-size: 60px;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 36px;
+        }
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+        h4 {
+            font-size: 24px;
+        }
+        h4 {
+            display: block;
+            margin-block-start: 1.33em;
+            margin-block-end: 1.33em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            padding-left: 20px;
+            padding-right: 7px;
+        }
+        h5{
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: inherit;
+            font-size: small;
+            color: darkslategrey;
+            padding-left: 20px;
+            padding-right: 7px;
+        }
+        .breadcrumb-text .breadcrumb-option a {
+            font-size: 16px;
+            color: #ffffff;
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            background-color: transparent;
+            
+        }
+        /* .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        } */
+        /* .fa-home:before {
+            content: "\f015";
+        }     */
+        .breadcrumb-text .breadcrumb-option a:after {
+            position: absolute;
+            right: -10px;
+            top: 0;
+            content: "";
+            font-family: "FontAwesome";
+        }
+        .breadcrumb-text .breadcrumb-option span {
+            font-size: 16px;
+            color: #bdbdbd;
+            display: inline-block;
+        }
+        .single-blog-item {
+            margin-bottom: 42px;
+            border: solid;
+            border-color: rgb(234, 173, 81);
+            background-color: #bdbdbd;
+        }
+        .single-blog-item .blog-widget {
+            margin-bottom: 10px;
+        }
+        .single-blog-item .blog-widget .bw-date {
+            font-size: 14px;
+            color: #bdbdbd;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .single-blog-item .blog-widget .tag {
+            font-size: 14px;
+            color: #f15d44;
+        }
+        a {
+            color: #010b16;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        .img_blog{
+            width: 330px;
+            height: 300px;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+          <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li>
+              <a href="shop.html" class="desktop-item">Online Shopping</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Online Shopping</label>
+              <ul class="drop-menu">
+                <li><a href="#">Bottles</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-item">Services</a>
+              <input type="checkbox" id="showDrop">
+              <label for="showDrop" class="mobile-item">Services</label>
+              <ul class="drop-menu">
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+      </nav><br><br>
+    <section class="breadcrumb-section set-bg" data-setbg="imgs/blog.webp" style="background-image:url(imgs/blog.webp);">
+        <div class="container_blog">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>Blog</h2>
+                        <!-- <div class="breadcrumb-option">
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                Home
+                            </a>
+                            <span>Blog</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog-section spad">
+        <div class="container_blog">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog1.webp" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://www.bornfitness.com/what-is-a-calorie/"><h4>What Is A Calorie?</h4>
+                            <h5>We often think of calories as something we eat, but, the truth is, a calorie is simply a unit of energy.</h5><button>Read More</button></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog2.jpg" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://niashanks.com/health-and-fitness-should-make-you-feel-good-about-yourself/"><h4>Health and Fitness Should Make You Feel Good About Yourself</h4>
+                            <h5>You can listen to this article. Use the player below, download the MP3, or use iTunes.</h5><button>Read More</button></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog3.webp" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://ericcressey.com/why-you-cant-feel-your-serratus-anterior-working"><h4>Why You Can’t Feel Your Serratus Anterior Working</h4>
+                            <h5>Recently, I received an inquiry from a follower who asked why it’s so hard to “feel”...</h5><button>Read More</button></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog4.jpg" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://www.aworkoutroutine.com/sugar/">
+                                <h4>Sugar Isn’t Good Or Bad…</h4>
+                                <h5>People love to classify everything in life as being either good or bad, black or white, right or wron...</h5>
+                                <button>Read More</button>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog5.jpg" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://www.aworkoutroutine.com/how-to-lose-fat/"><h4>How To Lose Fat: The TRUTH About Fat Loss</h4>
+                            <h5>To show you exactly what I mean, let’s start this off with a list of things that DON’T cause fat loss.</h5><button>Read More</button></a>
+                        </h4>
+                    </div>
+                </div>                
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <img src="imgs/blog6.jpg" alt="" class="img_blog">
+                        <div class="blog-widget">
+                            <!-- <div class="bw-date">February 17, 2019</div>     -->
+                            <a href="#" class="tag"></a>                       
+                        </div>
+                        <h4>
+                            <a href="https://www.aworkoutroutine.com/1200-calorie-diet/"><h4>What Is A Calorie?</h4>
+                                <h5>You know exactly what I’m referring to, don’t you?
+                                    Of course you do. </h5>
+                                <button>Read More</button>
+                            </a>
+                        </h4>
+                    </div>
+                </div>         
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                <li><a href="#">Facilities</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Online shop</h4>
+              <ul>
+                <li><a href="#">Bottles</a></li>
+                <li><a href="#">Equipment</a></li>
+                <li><a href="#">Training Shoes</a></li>
+                <li><a href="#">Protein Powder</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">HIIT</a></li>
+                <li><a href="#">Kickboxing</a></li>
+                <li><a href="#">Cycling</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Personal Training</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Contact us</h4>3
+              <ul class="contact">
+                <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
+                <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
+                  Tulsi Theater Rd, Marathahalli, Bengaluru,
+                  Karnataka 560037, India</li>
+                <li></li>
+              </ul>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+     </footer>
+</body>
+</html>

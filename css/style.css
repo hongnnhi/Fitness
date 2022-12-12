@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #242526;
+  }
+  nav .wrapper{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper .logo a{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .wrapper .logo .log{
+    width: 180px;
+    height:auto;
+    position: relative;
+    left:-10px;
+  }
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links li a:hover{
+    background: #3A3B3C;
+  }
+  .nav-links .mobile-item{
+    display: none;
+  }
+  .nav-links .drop-menu{
+    position: absolute;
+    background: #242526;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .nav-links li:hover .drop-menu{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+  .wrapper .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  @media screen and (max-width: 970px) {
+    .wrapper .btn{
+      display: block;
+    }
+    .wrapper .nav-links{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      background: #242526;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #242526;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A3B3C;
+    }
+    #menu-btn:checked ~ .nav-links{
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn{
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn{
+      display: block;
+    }
+    .nav-links li{
+      margin: 15px 10px;
+    }
+    .nav-links li a{
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    .nav-links .drop-menu{
+      position: static;
+      opacity: 1;
+      top: 65px;
+      visibility: visible;
+      padding-left: 20px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .drop-menu{
+      max-height: 100%;
+    }
+    .nav-links .desktop-item{
+      display: none;
+    }
+    .nav-links .mobile-item{
+      display: block;
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .nav-links .mobile-item:hover{
+      background: #3A3B3C;
+    }
+    .drop-menu li{
+      margin: 0;
+    }
+    .drop-menu li a{
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+  nav input{
+    display: none;
+  }
+  .banner{
+    position: relative;
+  }
+  .banner .col-sm-4{
+    position: absolute;
+    top: 15.5%;
+    left: 15.5%;
+    color: white;
+  }
+  .banner h2{
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 1000;
+  }
+  .banner p{
+    font-size: 1.5vw;
+    font-weight: 10;
+  }
+  .banner button{
+    width: 8vw;
+    display: inline-block;
+    font-size: 1.25vw;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background:linear-gradient(to right, #000000, #ffffff);
+    margin: 4px 2px;
+    border-radius: 16px; 
+    cursor: pointer;
+    transition: width 0.1s;
+  }
+  button img{
+    width: 2vw;
+    display: none;
+  }
+  .banner button:hover img{
+    display: inline-block;
+  }
+  .banner button:hover{
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner button a{
+    text-decoration: none;
+    color: orangered;
+  }
+  .banner button a:hover{
+        color:#e91e63;
+  }
+  .class{
+    text-align: center;
+    font-size: 24px;
+    
+  }
+  .class a{
+    text-decoration: none;
+    color: black;
+  }
+  .class a:hover{
+    text-decoration: underline;
+  }
+  .class .book{
+    border: none;
+    border-radius: 16px;
+    background-color: darkgray;
+  }
+  .class .book:hover{
+    background-color: gray;
+  }
+  .class .book a{
+    margin: 10px;
+  }
+  .trainer{
+    margin: 50px;
+  }
+  .trainer .para{
+    padding:100px;
+    background-color: #242526 ;
+    color: white;
+  }
+  .para p{
+    font-size: 15px;
+  }
+  .para button{
+    background-color: darkgray;
+    border-radius: 16px;
+    border: none;
+    width:150px;
+  }
+  .para button:hover{
+    background-color: gray;
+  }
+  .para button a{
+    text-decoration: none;
+    margin:10px;
+    color:black;
+  }
+  .para button a:hover{
+    text-decoration: underline;
+  }
+  h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: bolder;
+    padding:50px;
+  }
+  .best{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sell td{
+    padding: 20px;
+  }
+  .sell img{
+    width: 300px;
+    transition: transform .2s;
+  }
+  .sell img:hover{
+    -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  }
+  .sell figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+    body{
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 1300px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #242526;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .contact{
+        color: #bbbbbb;
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    @media(max-width: 970px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+    .copy{
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        }
