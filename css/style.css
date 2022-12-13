@@ -246,13 +246,15 @@ nav{
   .trainer{
     margin: 50px;
   }
-  .trainer .para{
+  .para{
+    height: 690px;
     padding:100px;
     background-color: #242526 ;
     color: white;
   }
-  .para p{
+  .trainer .para p{
     font-size: 15px;
+    margin-left: 10%;
   }
   .para button{
     background-color: darkgray;
