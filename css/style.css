@@ -277,28 +277,7 @@ nav{
     font-weight: bolder;
     padding:50px;
   }
-  .best{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sell td{
-    padding: 20px;
-  }
-  .sell img{
-    width: 300px;
-    transition: transform .2s;
-  }
-  .sell img:hover{
-    -ms-transform: scale(1.05); 
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-  }
-  .sell figcaption{
-    margin-top: 10px;
-    text-align: center;
-    font-size: 15px;
-  }
+
     body{
         line-height: 1.5;
         font-family: 'Poppins', sans-serif;
@@ -320,6 +299,7 @@ nav{
         list-style: none;
     }
     .footer{
+      width: 100%;
         background-color: #242526;
         padding: 70px 0;
     }
@@ -387,7 +367,7 @@ nav{
     }
     @media(max-width: 970px){
       .footer-col{
-        width: 50%;
+        width: 100%;
         margin-bottom: 30px;
     }
     }

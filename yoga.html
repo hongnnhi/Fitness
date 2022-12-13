@@ -6,9 +6,11 @@
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="https://cali.vn/themes/cfyc/assets/css/minify-compress.css?v=1.6.0">
 <link rel="stylesheet" type="text/css" href="https://cali.vn/themes/cfyc/assets/css/training.css?v=1.6.0">
-
-   
-
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -96,7 +98,43 @@ white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:
 .fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03,
 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style></head>
 <body id="body">
-   
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li>
+                    <a href="shop.html" class="desktop-item">Online Shopping</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Online Shopping</label>
+                    <ul class="drop-menu">
+                        <li><a href="shop.html#bottle">Bottles</a></li>
+                        <li><a href="shop.html#shoes">Training Shoes</a></li>
+                        <li><a href="shop.html#powder">Protein Powder</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="service.html" class="desktop-item">Services</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Services</label>
+                    <ul class="drop-menu">
+                        <li><a href="aerobics.html">Aerobics</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
 
            
        
@@ -277,7 +315,7 @@ white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:
         <div class="left-contain">
             <div class="sticky">
                 <div class="big-title">
-                    <h2>50+ LỚP YOGA HÀNG TUẦN</h2>
+                    <h2>50+ CLASSES OF YOGA WEEKLY</h2>
                 </div>
                 <div class="description">
                     Many time frames, early morning classes Various types of Yoga and levels Taught by Indian and Vietnamese Yogis International lesson plans updated weekly
@@ -779,3 +817,51 @@ white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="service.html">Our Services</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="shop.html#bottle">Bottles</a></li>
+                        <li><a href="shop.html#shoes">Training Shoes</a></li>
+                        <li><a href="shop.html#powder">Protein Powder</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="aerobics.html">Aerobics</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="contact">
+                        <li><span class="glyphicon glyphicon-earphone"></span> 123-456-7890</li>
+                        <li><span class="glyphicon glyphicon-home"></span> 862/B,VTR PLAZA,2nd floor,4th main road,
+                            Tulsi Theater Rd, Marathahalli, Bengaluru,
+                            Karnataka 560037, India</li>
+                        <li></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="cart.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="cart.html"><i class="fab fa-twitter"></i></a>
+                        <a href="cart.html"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
