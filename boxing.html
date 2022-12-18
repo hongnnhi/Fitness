@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <LINK rel=“stylesheet” href=“body.css”/>
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dolend.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        .text-infor-contain {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 25px;}
+            .bck{
+            position: absolute;
+            top: 40.2%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            color:white;
+            font-size:35px;
+            padding-top: 15px;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 15px;}
+            .bcky{
+ position: absolute;
+ top: 510px;
+ left: 15%;
+ transform: translate(-50%, -50%);
+ color:white;
+ font-size:25px;
+ padding-top: 15px;
+ padding-left: 60px;
+ padding-right: 60px;
+
+ padding-bottom: 15px;}
+
+
+
+
+ .bckyy{
+ position: absolute;
+ top: -30px;
+ left: 350px;
+ transform: translate(-50%, -50%);
+ color:white;
+ font-size:35px;
+ padding-top: 15px;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-bottom: 15px;}
+
+
+
+ .bckyyy{
+ position: absolute;
+ top: 80px;
+ left: 350px;
+ transform: translate(-50%, -50%);
+ color:white;
+ font-size:25px;
+ padding-top: 15px;
+ padding-left: 60px;
+ padding-right: 60px;
+ padding-bottom: 15px;}
+
+ .verticalLine {
+  border-left: thick solid white;
+}
+.boxing{
+position: absolute;
+top: 200px;
+left: 250px;
+top: 500px;
+transform: translate(-50%, -50%);
+color:white;
+font-size:55px;
+padding-top: 15px;
+padding-left: 80px;
+padding-right: 60px;
+padding-bottom: 15px;}
+
+.boxingg{
+position: absolute;
+top: 400px;
+left: 250px;
+top: 700px;
+transform: translate(-50%, -50%);
+color: white;
+font-size:30px;
+padding-top: 10px;
+padding-left: 80px;
+padding-right: 60px;
+padding-bottom: 15px;}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+nav{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background: #242526;
+  }
+  nav .wrapper{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper .logo a{
+    color: #f2f2f2;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .wrapper .logo .log{
+    width: 180px;
+    height:auto;
+    position: relative;
+    left:-10px;
+  }
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-links li a:hover{
+    background: #3A3B3C;
+  }
+  .nav-links .mobile-item{
+    display: none;
+  }
+  .nav-links .drop-menu{
+    position: absolute;
+    background: #242526;
+    width: 180px;
+    line-height: 45px;
+    top: 85px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .nav-links li:hover .drop-menu{
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .drop-menu li a{
+    width: 100%;
+    display: block;
+    padding: 0 0 0 15px;
+    font-weight: 400;
+    border-radius: 0px;
+  }
+  .wrapper .btn{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  .wrapper .btn.close-btn{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  @media screen and (max-width: 970px) {
+    .wrapper .btn{
+      display: block;
+    }
+    .wrapper .nav-links{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 350px;
+      top: 0;
+      left: -100%;
+      background: #242526;
+      display: block;
+      padding: 50px 10px;
+      line-height: 50px;
+      overflow-y: auto;
+      box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+      transition: all 0.3s ease;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #242526;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #3A3B3C;
+    }
+    #menu-btn:checked ~ .nav-links{
+      left: 0%;
+    }
+    #menu-btn:checked ~ .btn.menu-btn{
+      display: none;
+    }
+    #close-btn:checked ~ .btn.menu-btn{
+      display: block;
+    }
+    .nav-links li{
+      margin: 15px 10px;
+    }
+    .nav-links li a{
+      padding: 0 20px;
+      display: block;
+      font-size: 20px;
+    }
+    .nav-links .drop-menu{
+      position: static;
+      opacity: 1;
+      top: 65px;
+      visibility: visible;
+      padding-left: 20px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+    #showDrop:checked ~ .drop-menu{
+      max-height: 100%;
+    }
+.nav-links .desktop-item{
+      display: none;
+    }
+    .nav-links .mobile-item{
+      display: block;
+      color: #f2f2f2;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .nav-links .mobile-item:hover{
+      background: #3A3B3C;
+    }
+    .drop-menu li{
+      margin: 0;
+    }
+    .drop-menu li a{
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+  nav input{
+    display: none;
+  }
+  .banner{
+    position: relative;
+  }
+  .banner .col-sm-4{
+    position: absolute;
+    top: 15.5%;
+    left: 15.5%;
+    color: white;
+  }
+  .banner h2{
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: 1000;
+  }
+  .banner p{
+    font-size: 1.5vw;
+    font-weight: 10;
+  }
+  .banner button{
+    width: 8vw;
+    display: inline-block;
+    font-size: 1.25vw;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background:linear-gradient(to right, #000000, #ffffff);
+    margin: 4px 2px;
+    border-radius: 16px; 
+    cursor: pointer;
+    transition: width 0.1s;
+  }
+  button img{
+    width: 2vw;
+    display: none;
+  }
+  .banner button:hover img{
+    display: inline-block;
+  }
+  .banner button:hover{
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .banner button a{
+    text-decoration: none;
+    color: orangered;
+  }
+  .banner button a:hover{
+        color:#e91e63;
+  }
+  .class{
+    text-align: center;
+    font-size: 24px;
+    
+  }
+  .class a{
+    text-decoration: none;
+    color: black;
+  }
+  .class a:hover{
+    text-decoration: underline;
+  }
+  .class .book{
+    border: none;
+    border-radius: 16px;
+    background-color: darkgray;
+  }
+  .class .book:hover{
+    background-color: gray;
+  }
+  .class .book a{
+    margin: 10px;
+  }
+  .trainer{
+    margin: 50px;
+  }
+  .trainer .para{
+    padding:100px;
+    background-color: #242526 ;
+    color: white;
+  }
+  .para p{
+    font-size: 15px;
+  }
+  .para button{
+    background-color: darkgray;
+    border-radius: 16px;
+    border: none;
+    width:150px;
+  }
+  .para button:hover{
+    background-color: gray;
+  }
+  .para button a{
+    text-decoration: none;
+    margin:10px;
+    color:black;
+  }
+  .para button a:hover{
+    text-decoration: underline;
+  }
+  h1{
+    text-align: center;
+    font-size: 65px;
+    font-weight: bolder;
+    padding:50px;
+  }
+  .best{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sell td{
+    padding: 20px;
+  }
+  .sell img{
+    width: 300px;
+    transition: transform .2s;
+  }
+  .sell img:hover{
+    -ms-transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  }
+  .sell figcaption{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+    body{
+        line-height: 1.5;
+        font-family: 'Poppins', sans-serif;
+    }
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    .container{
+max-width: 1300px;
+        margin:auto;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul{
+        list-style: none;
+    }
+    .footer{
+        background-color: #242526;
+        padding: 70px 0;
+    }
+    .footer-col{
+       width: 25%;
+       padding: 0 15px;
+    }
+    .footer-col h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footer-col .contact{
+        color: #bbbbbb;
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: 'Poppins', sans-serif;
+    }
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    @media(max-width: 970px){
+      .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    }
+    @media(max-width: 574px){
+      .footer-col{
+        width: 100%;
+    }
+    }
+ 
+        </style>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-S6N5C9ZTPS');
+            </script>
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KJ9WBZ');</script>
+            <!-- End Google Tag Manager -->
+            <meta name="google-site-verification" content="uFLreY77gCMi7GGVWPSpzUQ7OpvJjB9xxRTPVMT-y08">
+            
+</head>
+<body>
+  <nav>
+    <div class="wrapper">
+        <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li>
+                <a href="shop.html" class="desktop-item">Online Shopping</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Online Shopping</label>
+                <ul class="drop-menu">
+                    <li><a href="shop.html#bottle">Bottles</a></li>
+                    <li><a href="shop.html#shoes">Training Shoes</a></li>
+                    <li><a href="shop.html#powder">Protein Powder</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="service.html" class="desktop-item">Services</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Services</label>
+                <ul class="drop-menu">
+                    <li><a href="aerobics.html">Aerobics</a></li>
+                    <li><a href="boxing.html">Boxing</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+</nav>
+    <div class="body-contain">
+        <div class="banner-contain">
+            <div class="item">
+                            <img width="100%" height="50%" class="lazy" alt="training-banner" src="Fitness\29861bd9b0c8a5d193cfa194c00d584b.jpg">
+                        
+                <div class="submit-contain-header">
+                    <div class="submit-header-content">
+                        <div class="left-box">
+                            <div class="bck">
+                               
+                              MULTIPLE LEVELS  
+                            </div>
+                            <td>
+                            <div class="bcky">
+                                From beginner to advanced
+                                
+                            </div>
+                        </td>
+                        </div>
+                        <hr width="2" size="500">
+                        <div class="bcky">
+                            <div>
+                              <hr width="1" size="500">
+                                <div class="bckyy" style="background-color:while ;">
+                                    TIME
+                                </div>
+                                <div class="bckyyy">
+                                    60 minutes (Continuous class from 6:15 - 19:00)
+                                </div>
+                            </div>   
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black-contain">
+            <div class="service-contain">
+                <div class="left-contain">
+                    <div class="big-title">
+                        <h1 style="padding-left: 100px ; padding-top: 400px; color: aliceblue; font-size: 35px;">BOXING <br><br> CLASS <br><br> FITS</h1>
+                    </div>
+                </div>
+                <section>
+                  <section>
+                    <div class="container"> 
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel"style="left: 300px; top: -370px;">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                          </ol>
+                                
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" style=" width: 100.9%; margin-left: -114px;">
+                            <div class="item active">
+                                <img src="Fitness\post_mach-nho-4-bi-quyet-giam-can-cho-nam-gioi-hieu-qua-nhat-012101110417.jpg" alt="Los Angeles" style="width:100%;">
+                                <h4 style="color:aliceblue; font-size: 30px;text-align: center;">PERSON WANT TO LOSE WEIGHT EFFECTIVELY</h4>
+                                <p style="color: beige; text-align: center; font-size: 20px;">
+                                  With slow speed and deep impact during multi-dimensional reflection
+                                    movement, Boxing accurately affects areas of fat accumulation such as the abdomen,
+                                     back and hips. Regular boxing practice, your body will change markedly with a slim waist, a healthy body, a more refreshing and lighter spirit.</p>
+                            </div>
+                            <div class="item">
+                                <img src="Fitness\1-5.png"  alt="Chicago" style="width:100%;">
+                                <h4 style="color:aliceblue; font-size: 30px;text-align: center;">BEGINNER</h4>
+                                <p style="color: beige; text-align: center; font-size: 20px;">
+                                 Thanks to the slow pace of practice in BOXING,
+                                  you can shape the correct exercise postures, limit injuries at the beginner stage, thanks to that
+                                   easily improve endurance when pursuing other subjects that have a lot of potential. Fast paced and more powerful.</p>
+                            </div>
+                            <div class="item">
+                                <img src="Fitness\nguoi-dep-ngan-hang.jpg" alt="New york" style="width:100%;">
+                                <h4 style="color:aliceblue; font-size: 25px;text-align: center; font-size: 30px;"> OFFICE STAFF</h4>
+                                <p style="color: beige; text-align: center;font-size: 20px;">
+                                  BOXING is the perfect antidote to a stressful day. Regular practice of BOXING will help
+                                  Abdominal muscles, shoulders, back, ... are toned. In addition, BOXING also helps you sleep better, mentally clear and solve work better.
+                                                                                                </p>
+                            </div>
+                            <div class="item">
+                                <img src="Fitness\Nguoi-lon-tuoi-moi-bat-dau-hoc-vo-chua-bao-gio-la-muon.jpg" alt="Chicago" style="width:100%;">
+                                <h4 style="color:aliceblue; font-size: 30px;text-align: center;">MIDDLE-AGED AND ELDERLY PEOPLE</h4>
+                                <p style="color: beige; text-align: center;font-size: 20px;">
+                                 BOXING activates the body's important endocrine glands, promoting continuous cell production
+                                   To help the body detox from deep within. As a result, giving you a body full of vitality and lasting health.</p>
+                            </div>
+                         
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span  class="glyphicon glyphicon-chevron-left"></span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                        </div>
+                    </div>
+                    </div>
+                    </section>
+      
+      
+      
+        
+        
+    <!--
+  Please note: this code is in no way ready to be used as is in production on your website. It will need to be adapted to be cross browser compliant & accessible. I just wanted to share how one might go about this effect with CSS & JS and no other dependencies
+-->
+<div class="container">
+  <h1 style="padding-left: 20px ; padding-top: 10px; color: aliceblue; font-size: 55px;">50+ BOXING CLASSES  WEEKLY</h1>
+<p style="padding-left: 20px; padding-top: 10px; color: bisque; font-size: 40px;">
+  Many time frames, early morning classes Diverse types of Boxing and levels taught by foreign and Indian coaches International lesson plans updated weekly.
+</p>
+<br><br><br>
+    <div class="card-column column-0">
+      <div class="card card-color-0">
+        <div class="border"></div>
+        <img src="Fitness\kick-boxing-k1-adulto-600.jpeg" />
+        <h1 id="gentle yoga">Kickboxing</h1>
+       
+      </div>
+      <div class="card card-color-2">
+        <div class="border"></div>
+        <img src="Fitness\Nhat-1574487160-9700-1574488589_680x0.jpg"/>
+        <h1 id="hatha yoga">Muay Thai</h1>
+        <h5></h5>
+      </div>
+    </div>
+    <div class="card-column column-1">
+      <div class="card card-color-1">
+        <div class="border"></div>
+        <img src="Fitness\pexels-photo-8810062.jpeg" />
+        <h1 id="ashtaga">Shadow boxing</h1>
+        <h5></h5>
+      </div>
+      <div class="card card-color-3">
+        <div class="border"></div>
+        <img src="Fitness\hoc-kickboxing-gia-bao-nhieu-scaled.jpg "style="width: 300px;" />
+        <h1 id="vinyasa">Gymnastics boxing</h1>
+      
+      </div>
+      </div>
+    </div>
+    </div>
+     </div>
+     </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     
+     
+  <div id="cover" class="cover"></div>
+  
+  <div id="open-content" class="open-content">
+    <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+    <img id="open-content-image" src="" />
+    <div class="text" id="open-content-text">
+    </div>
+  </div>
+  <section>
+    <div class="container"> 
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+  <div class="submit-contain-header">
+    <div class="submit-header-content">
+        <div class="left-box">
+            <div class="boxing">
+               
+              ENJOY YOGA WITH <br> INTERNATIONAL STANDARD <br> STUDIO 
+            </div>
+            <div class="boxingg">
+              We create an authentic Yoga environment<br> with superior, superior facilities<br> for true Yoga followers.
+          </div>
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+          </ol>
+          <!-- Wrapper for slides -->
+            <div class="submit-contain-header">
+              <div class="submit-header-content">
+                  <div class="left-box">
+                      <div class="boxing">
+                         
+                        ENJOY YOGA WITH <br> INTERNATIONAL STANDARD <br> STUDIO 
+                      </div>
+                      <div class="boxingg">
+                        We create an authentic Yoga environment<br> with superior, superior facilities<br> for true Yoga followers.
+                    </div>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style=" width: 205%;height: 900px; margin-left: -630px; ">
+            <div class="item active">
+                <img src="imgs/phong-gym-co-tap-vo-17 (1).jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="imgs/Phong-tap-chat-luong-phai-co-co-so-vat-chat-hien-dai-dung-cu-tap-luyen-co-do-moi-cao.jpg" alt="Chicago" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="imgs/photo1654141201064-16541412013942036787477-63789769265849.webp" alt="New york" style="width:100%;">
+            </div>
+            <div class="item">
+                <img src="imgs/thiet-ke-phong-tap-võ-mau-02.jpg" alt="Chicago" style="width:100%;">
+            </div>
+         
+          <!-- Left and right controls -->
+        </div>
+    </div>
+    </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    
+<style>
+  dl.faq button {
+  margin: 0;
+  margin-top: 16px;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 110%;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+dl dd {
+  margin: 0;
+  padding: 0;
+  margin-left: 1.5em;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #777;
+}
+
+dl.faq .desc {
+  margin: 0;
+  margin-top: 0.25em;
+  padding: 0.25em;
+  font-size: 110%;
+  display: none;
+  background-color: #fed;
+}
+
+dl.faq button:hover,
+dl.faq button:focus {
+  padding: 2px 6px;
+  background-color: #def;
+  border: 2px solid #005a9c;
+  cursor: pointer;
+}
+
+dl.faq button[aria-expanded="false"]::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' style='forced-color-adjust: auto;'%3E%3Cpolygon points='1 1, 1 11, 8 6' fill='currentcolor' stroke= 'currentcolor' /%3E%3C/svg%3E%0A");
+  position: relative;
+  left: -2px;
+}
+
+dl.faq button[aria-expanded="true"]::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' style='forced-color-adjust: auto;'%3E%3Cpolygon points='1 1, 11 1, 6 8' fill='currentcolor' stroke= 'currentcolor' /%3E%3C/svg%3E ");
+  position: relative;
+  left: -4px;
+  top: 2px;
+}
+</style>
+<div class="big-title">
+  <h2 style="color: aliceblue; padding-left: 36%; font-size: 45px;">FREQUENTLY ASKED QUESTIONS</h2>
+</div>
+<br><br>
+    <div class="sheat">    
+  
+  <dl class="faq">
+    <dt>
+      <button type="button" aria-expanded="false" aria-controls="faq1_desc">Is it easy to get injured when practicing boxing? Is it dangerous?</button>
+    </dt>
+    <dd>
+      <div id="faq1_desc" class="desc">
+        This question should be split into two discussions, to make the fight more interesting, professional boxers are not supposed to wear helmets and 8 or 10 ounce thin gloves, so during the fight,
+         If they get punched, it will be very painful. Although there are laws to protect, but internal and external trade is inevitable, to win the boxers will have to grind their teeth to continue fighting despite being injured. However, amateurs often practice boxing, mainly punching sandbags, hitting targets, air strikes and moving. Although they can also fight in real combat, trainers often require both sides to wear headgear and use thick gloves. In real combat, they can stop,
+         except for a very small number of people who do not pay attention to actual combat and do not wear protective gear, leaving very few cases of serious injuries.
+      </div>
+    </dd>
+    <br><br>
+    <dt>
+      <button type="button" aria-expanded="false" aria-controls="faq2_desc">What are the benefits of boxing training?</button>
+    </dt>
+    <dd>
+      <br>
+      <div id="faq2_desc" class="desc">
+        Most sports have a good effect on the body, boxing is no exception, but data shows that boxing is the best exercise for weight loss, burning about 800 calories an hour.
+         Boxing is the combination. Combination of anaerobic exercise and aerobic exercise, after intense anaerobic exercise, the amount of sugar, fat and protein in the body will quickly be burned to provide the necessary calories for the body. boxing training, every part of the body must be involved, the muscles are constantly contracting,
+         the mind is highly concentrated, the brain runs at high speed, the heart rate and breathing rate increase the reaction speed, the quality spirit.
+      </div>
+    </dd>
+    <dt>
+      <br><br>
+      <button type="button" aria-expanded="false" aria-controls="faq3_desc">Boxing looks so simple, why do I need to find a coach to learn it?</button>
+    </dt>
+    <br>
+    <dd>
+      <div id="faq3_desc" class="desc">
+        Boxing seems to be very simple, people who have not practiced boxing will also know how to punch when fighting with others, but normal people punch with the strength of their arms, and those who have practiced boxing use the strength of their bodies to push.
+         On the arm, the front force is the force generated by the small muscles of the arm, and the posterior force is the force generated by the large muscle groups such as legs, waist, abdomen, back to pull the arm up. The force is many times larger than the force of the arm. Although the principle is simple, there are strict requirements for the movement of different parts of the human body, it will be difficult for beginners to practice, Only through professional coaches and thousands of corrections and practices can they master the skills of using force. However, learning how to develop strength is only the first step in boxing, fighters also need to practice advanced techniques such as footwork, defense, combined punches, attack and defense transitions. , fake moves, rhythm control. Even punching is a technique,
+         in addition to practicing movements, boxers also need to conduct special exercises such as endurance, physical strength, how to hit.
+         Before playing, you still need to research and build tactics, in general you need to have 2 options, A and B, which can be adjusted at any time depending on the situation on the field, in a word that is easy to understand. Boxing is harder than you think.
+      </div>
+    </dd>
+  <script>
+
+    /*
+*   This content is licensed according to the W3C Software License at
+*   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
+*
+*   File:   disclosure-button.js
+*
+*   Desc:   Disclosure button widget that implements ARIA Authoring Best Practices
+*/
+
+'use strict';
+
+/*
+*   @constructorDisclosureButton
+*
+*
+*/
+class DisclosureButton {
+constructor(buttonNode) {
+this.buttonNode = buttonNode;
+this.controlledNode = false;
+
+var id = this.buttonNode.getAttribute('aria-controls');
+
+if (id) {
+  this.controlledNode = document.getElementById(id);
+}
+
+this.buttonNode.setAttribute('aria-expanded', 'false');
+this.hideContent();
+
+this.buttonNode.addEventListener('click', this.onClick.bind(this));
+this.buttonNode.addEventListener('focus', this.onFocus.bind(this));
+this.buttonNode.addEventListener('blur', this.onBlur.bind(this));
+}
+
+showContent() {
+if (this.controlledNode) {
+  this.controlledNode.style.display = 'block';
+}
+}
+
+hideContent() {
+if (this.controlledNode) {
+  this.controlledNode.style.display = 'none';
+}
+}
+
+toggleExpand() {
+if (this.buttonNode.getAttribute('aria-expanded') === 'true') {
+  this.buttonNode.setAttribute('aria-expanded', 'false');
+  this.hideContent();
+} else {
+  this.buttonNode.setAttribute('aria-expanded', 'true');
+  this.showContent();
+}
+}
+
+/* EVENT HANDLERS */
+
+onClick() {
+this.toggleExpand();
+}
+
+onFocus() {
+this.buttonNode.classList.add('focus');
+}
+
+onBlur() {
+this.buttonNode.classList.remove('focus');
+}
+}
+
+/* Initialize Hide/Show Buttons */
+
+window.addEventListener(
+'load',
+function () {
+var buttons = document.querySelectorAll(
+  'button[aria-expanded][aria-controls]'
+);
+
+for (var i = 0; i < buttons.length; i++) {
+  new DisclosureButton(buttons[i]);
+}
+},
+false
+);
+
+  </script>
+
+
+
+
+  <script>
+    // listing vars here so they're in the global scope
+var cards, nCards, cover, openContent, openContentText, pageIsOpen = false,
+    openContentImage, closeContent, windowWidth, windowHeight, currentCard;
+
+// initiate the process
+init();
+
+function init() {
+  resize();
+  selectElements();
+  attachListeners();
+}
+
+// select all the elements in the DOM that are going to be used
+function selectElements() {
+  cards = document.getElementsByClassName('card'),
+  nCards = cards.length,
+  cover = document.getElementById('cover'),
+  openContent = document.getElementById('open-content'),
+  openContentText = document.getElementById('open-content-text'),
+  openContentImage = document.getElementById('open-content-image')
+  closeContent = document.getElementById('close-content');
+}
+
+/* Attaching three event listeners here:
+  - a click event listener for each card
+  - a click event listener to the close button
+  - a resize event listener on the window
+*/
+function attachListeners() {
+  for (var i = 0; i < nCards; i++) {
+    attachListenerToCard(i);
+  }
+  closeContent.addEventListener('click', onCloseClick);
+  window.addEventListener('resize', resize);
+}
+
+function attachListenerToCard(i) {
+  cards[i].addEventListener('click', function(e) {
+    var card = getCardElement(e.target);
+    onCardClick(card, i);
+  })
+}
+
+/* When a card is clicked */
+function onCardClick(card, i) {
+  // set the current card
+  currentCard = card;
+  // add the 'clicked' class to the card, so it animates out
+  currentCard.className += ' clicked';
+  // animate the card 'cover' after a 500ms delay
+  setTimeout(function() {animateCoverUp(currentCard)}, 500);
+  // animate out the other cards
+animateOtherCards(currentCard, true);
+  // add the open class to the page content
+  openContent.className += ' open';
+}
+
+/*
+* This effect is created by taking a separate 'cover' div, placing
+* it in the same position as the clicked card, and animating it to
+* become the background of the opened 'page'.
+* It looks like the card itself is animating in to the background,
+* but doing it this way is more performant (because the cover div is
+* absolutely positioned and has no children), and there's just less
+* having to deal with z-index and other elements in the card
+*/
+function animateCoverUp(card) {
+  // get the position of the clicked card
+  var cardPosition = card.getBoundingClientRect();
+  // get the style of the clicked card
+  var cardStyle = getComputedStyle(card);
+  setCoverPosition(cardPosition);
+  setCoverColor(cardStyle);
+  scaleCoverToFillWindow(cardPosition);
+  // update the content of the opened page
+  openContentText.innerHTML = '<h1>'+card.children[2].textContent+'</h1>'+paragraphText;
+  openContentImage.src = card.children[1].src;
+  setTimeout(function() {
+    // update the scroll position to 0 (so it is at the top of the 'opened' page)
+    window.scroll(0, 0);
+    // set page to open
+    pageIsOpen = true;
+  }, 300);
+}
+
+function animateCoverBack(card) {
+  var cardPosition = card.getBoundingClientRect();
+  // the original card may be in a different position, because of scrolling, so the cover position needs to be reset before scaling back down
+  setCoverPosition(cardPosition);
+  scaleCoverToFillWindow(cardPosition);
+  // animate scale back to the card size and position
+  cover.style.transform = 'scaleX('+1+') scaleY('+1+') translate3d('+(0)+'px, '+(0)+'px, 0px)';
+  setTimeout(function() {
+    // set content back to empty
+    openContentText.innerHTML = '';
+    openContentImage.src = '';
+    // style the cover to 0x0 so it is hidden
+    cover.style.width = '0px';
+    cover.style.height = '0px';
+    pageIsOpen = false;
+    // remove the clicked class so the card animates back in
+    currentCard.className = currentCard.className.replace(' clicked', '');
+  }, 301);
+}
+
+function setCoverPosition(cardPosition) {
+  // style the cover so it is in exactly the same position as the card
+  cover.style.left = cardPosition.left + 'px';
+  cover.style.top = cardPosition.top + 'px';
+  cover.style.width = cardPosition.width + 'px';
+  cover.style.height = cardPosition.height + 'px';
+}
+
+function setCoverColor(cardStyle) {
+  // style the cover to be the same color as the card
+  cover.style.backgroundColor = cardStyle.backgroundColor;
+}
+
+function scaleCoverToFillWindow(cardPosition) {
+  // calculate the scale and position for the card to fill the page,
+  var scaleX = windowWidth / cardPosition.width;
+  var scaleY = windowHeight / cardPosition.height;
+  var offsetX = (windowWidth / 2 - cardPosition.width / 2 - cardPosition.left) / scaleX;
+  var offsetY = (windowHeight / 2 - cardPosition.height / 2 - cardPosition.top) / scaleY;
+// set the transform on the cover - it will animate because of the transition set on it in the CSS
+  cover.style.transform = 'scaleX('+scaleX+') scaleY('+scaleY+') translate3d('+(offsetX)+'px, '+(offsetY)+'px, 0px)';
+}
+
+/* When the close is clicked */
+function onCloseClick() {
+  // remove the open class so the page content animates out
+  openContent.className = openContent.className.replace(' open', '');
+  // animate the cover back to the original position card and size
+  animateCoverBack(currentCard);
+  // animate in other cards
+  animateOtherCards(currentCard, false);
+}
+
+function animateOtherCards(card, out) {
+  var delay = 100;
+  for (var i = 0; i < nCards; i++) {
+    // animate cards on a stagger, 1 each 100ms
+    if (cards[i] === card) continue;
+    if (out) animateOutCard(cards[i], delay);
+    else animateInCard(cards[i], delay);
+    delay += 100;
+  }
+}
+
+// animations on individual cards (by adding/removing card names)
+function animateOutCard(card, delay) {
+  setTimeout(function() {
+    card.className += ' out';
+   }, delay);
+}
+
+function animateInCard(card, delay) {
+  setTimeout(function() {
+    card.className = card.className.replace(' out', '');
+  }, delay);
+}
+
+// this function searches up the DOM tree until it reaches the card element that has been clicked
+function getCardElement(el) {
+  if (el.className.indexOf('card ') > -1) return el;
+  else return getCardElement(el.parentElement);
+}
+
+// resize function - records the window width and height
+function resize() {
+  if (pageIsOpen) {
+    // update position of cover
+    var cardPosition = currentCard.getBoundingClientRect();
+    setCoverPosition(cardPosition);
+    scaleCoverToFillWindow(cardPosition);
+  }
+  windowWidth = window.innerWidth;
+  windowHeight = window.innerHeight;
+}
+
+var paragraphText = '<h1>As the name implies, kickboxing combines foot and foot attacks, alongside arm and swing attacks.<br> Muay Thai is a Thai boxing sport that combines punches, elbows, knees and shins.<br>What is Shadow Boxing in Boxing? In shadow boxing, punches are thrown into the air, aimlessly. Shadow boxing is used for technique practice and as a warm-up activity.<br>In gymnastics boxing, there is no contact between the participants. Boxing moves are used for strength training and participants can use a ball box or use a punching bag.</h1>';
+  </script>
+
+
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4>About us</h4>
+              <ul>
+                  <li><a href="service.html">Our Services</a></li>
+                  <li><a href="blog.html">Blogs</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Online Shop</h4>
+              <ul>
+                  <li><a href="shop.html#bottle">Bottles</a></li>
+                  <li><a href="shop.html#shoes">Training Shoes</a></li>
+                  <li><a href="shop.html#powder">Protein Powder</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="aerobics.html">Aerobics</a></li>
+                  <li><a href="boxing.html">Boxing</a></li>
+                  <li><a href="yoga.html">Yoga</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4>Contact us</h4>
+              <ul class="contact">
+                  <li><span class="glyphicon glyphicon-earphone"></span> 123-456-7890</li>
+                  <li><span class="glyphicon glyphicon-home"></span> 862/B,VTR PLAZA,2nd floor,4th main road,
+                      Tulsi Theater Rd, Marathahalli, Bengaluru,
+                      Karnataka 560037, India</li>
+                  <li></li>
+              </ul>
+              <div class="social-links">
+                  <a href="cart.html"><i class="fab fa-facebook-f"></i></a>
+                  <a href="cart.html"><i class="fab fa-twitter"></i></a>
+                  <a href="cart.html"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+</footer>
+</body>
+</html>

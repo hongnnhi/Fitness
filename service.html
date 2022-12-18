@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/service.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li>
+                    <a href="shop.html" class="desktop-item">Online Shopping</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Online Shopping</label>
+                    <ul class="drop-menu">
+                        <li><a href="shop.html#bottle">Bottles</a></li>
+                        <li><a href="shop.html#shoes">Training Shoes</a></li>
+                        <li><a href="shop.html#powder">Protein Powder</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="service.html" class="desktop-item">Services</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Services</label>
+                    <ul class="drop-menu">
+                        <li><a href="aerobics.html">Aerobics</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+            </ul>
+            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+        <section class="services">
+            <!--heading---------------->
+            <div class="s-heading">
+            <h1>Ser<font color="#4a90e2">vic</font>es</h1>
+            <p>We Provide The Best In Class Servies For Our Customers</p>
+            </div>
+            <!--services-box-container------------------->
+            <div class="s-box-container">
+            <!--service-box-1---------------->	
+            <div class="s-box">
+            <!--top-bar-------->
+            <div class="bar"></div>
+            <!--img---------->
+            <img alt="1" src="imgs/aeroicon.png" />
+            <!--servies-name---------->
+            <h1>Aerobics</h1>
+            <!--details------>
+                <p>Physical activity can improve immunity, concentration in the classroom and aerobic fitness.</p>
+            <!--btn---------->
+            <a class="s-btn" href="aerobics.html">More</a>
+            </div>
+                <!--service-box-1---------------->	
+            <div class="s-box">
+            <!--top-bar-------->
+            <div class="bar"></div>
+            <!--img---------->
+            <img alt="2" src="imgs/boxicon.png" />
+            <!--servies-name---------->
+            <h1>Boxing</h1>
+            <!--details------>
+                <p>Boxing is not about your feelings. It's about performance.</p>
+            <!--btn---------->
+            <a class="s-btn" href="boxing.html">More</a>
+            </div>
+                <!--service-box-3---------------->	
+            <div class="s-box">
+            <!--top-bar-------->
+            <div class="bar"></div>
+            <!--img---------->
+            <img alt="3" src="imgs/yogaicon.png" />
+            <!--servies-name---------->
+            <h1>Yoga</h1>
+            <!--details------>
+                <p>Yoga does not just change the way we see things, it transforms the person who sees.</p>
+            <!--btn---------->
+            <a class="s-btn" href="yoga.html">More</a>
+            </div>
+            </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>About us</h4>
+                            <ul>
+                                <li><a href="service.html">Our Services</a></li>
+                                <li><a href="blog.html">Blogs</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Online Shop</h4>
+                            <ul>
+                                <li><a href="shop.html#bottle">Bottles</a></li>
+                                <li><a href="shop.html#shoes">Training Shoes</a></li>
+                                <li><a href="shop.html#powder">Protein Powder</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="aerobics.html">Aerobics</a></li>
+                                <li><a href="boxing.html">Boxing</a></li>
+                                <li><a href="yoga.html">Yoga</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contact us</h4>
+                            <ul class="contact">
+                                <li><span class="glyphicon glyphicon-earphone"></span> 123-456-7890</li>
+                                <li><span class="glyphicon glyphicon-home"></span> 862/B,VTR PLAZA,2nd floor,4th main road,
+                                    Tulsi Theater Rd, Marathahalli, Bengaluru,
+                                    Karnataka 560037, India</li>
+                                <li></li>
+                            </ul>
+                            <div class="social-links">
+                                <a href="cart.html"><i class="fab fa-facebook-f"></i></a>
+                                <a href="cart.html"><i class="fab fa-twitter"></i></a>
+                                <a href="cart.html"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
+            </footer>
+</body>
+</html>

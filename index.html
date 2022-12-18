@@ -12,48 +12,56 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <style>
+      @media screen and (max-width: 970px){
+      .para{
+        width: 550px;
+        overflow:visible;
+      }
+}
+    </style>
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-          <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
-          <input type="radio" name="slider" id="menu-btn">
-          <input type="radio" name="slider" id="close-btn">
-          <ul class="nav-links">
+  <nav>
+    <div class="wrapper">
+        <div class="logo"><a href="#"><img src="imgs/logo.png" class="log"></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="#">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="blog.html">Blogs</a></li>
             <li>
-              <a href="shop.html" class="desktop-item">Online Shopping</a>
-              <input type="checkbox" id="showDrop">
-              <label for="showDrop" class="mobile-item">Online Shopping</label>
-              <ul class="drop-menu">
-                <li><a href="#">Bottles</a></li>
-                <li><a href="#">Equipment</a></li>
-                <li><a href="#">Training Shoes</a></li>
-                <li><a href="#">Protein Powder</a></li>
-              </ul>
+                <a href="shop.html" class="desktop-item">Online Shopping</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Online Shopping</label>
+                <ul class="drop-menu">
+                    <li><a href="shop.html#bottle">Bottles</a></li>
+                    <li><a href="shop.html#shoes">Training Shoes</a></li>
+                    <li><a href="shop.html#powder">Protein Powder</a></li>
+                </ul>
             </li>
             <li>
-              <a href="#" class="desktop-item">Services</a>
-              <input type="checkbox" id="showDrop">
-              <label for="showDrop" class="mobile-item">Services</label>
-              <ul class="drop-menu">
-                <li><a href="#">HIIT</a></li>
-                <li><a href="#">Cycling</a></li>
-                <li><a href="#">Kickboxing</a></li>
-                <li><a href="#">Yoga</a></li>
-                <li><a href="#">Personal Training</a></li>
-              </ul>
+                <a href="service.html" class="desktop-item">Services</a>
+                <input type="checkbox" id="showDrop">
+                <label for="showDrop" class="mobile-item">Services</label>
+                <ul class="drop-menu">
+                    <li><a href="aerobics.html">Aerobics</a></li>
+                    <li><a href="boxing.html">Boxing</a></li>
+                    <li><a href="yoga.html">Yoga</a></li>
+                    
+                </ul>
             </li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
-          </ul>
-          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
-      </nav><br><br>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html"><i class="glyphicon glyphicon-user"></i>Log in</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+</nav><br><br>
      <section class="banner">
         <img src="imgs/1128335.jpg" width="100%">
         <div class="col-sm-4">
@@ -63,146 +71,119 @@
             <button><a href="aboutus.html">Read More <img src="imgs/arrow.png"></a></button>
         </div>
      </section>
-     <div class="class">
-        <h1>Our Classes</h1>
-          <table class="table table-hover">
-            <tr>
-              <td><a href="#">HIIT</a></td>
-              <td>45 mins</td>
-              <td><button class="book"><a href="#">Book Now</a></button></td>
-            </tr>
-            <tr>
-              <td><a href="#">Kickboxing</a></td>
-              <td>60 mins</td>
-              <td><button class="book"><a href="#">Book Now</a></button></td>
-            </tr>
-            <tr>
-              <td><a href="#">Cycling</a></td>
-              <td>60 mins</td>
-              <td><button class="book"><a href="#">Book Now</a></button></td>
-            </tr>
-            <tr>
-              <td><a href="#">Yoga</a></td>
-              <td>90 mins</td>
-              <td><button class="book"><a href="#">Book Now</a></button></td>
-            </tr>
-            <tr>
-              <td><a href="#">Personal Training</a></td>
-              <td>Depends</td>
-              <td><button class="book"><a href="#">Book Now</a></button></td>
-            </tr>
-          </table>
-     </div><br><br><br>
      <div class="table-response">
         <h1>Best Trainer</h1>
-        <table class="trainer">
-          <tr>
-            <td><img src="doAn/yoga.jpg" alt="" class="hlv" width="550px"></td>
-            <td class="para">
-              <h1 style="text-align: left;">Yoga by Sophie</h1><br>
-              <p>Sophie, a Yoga teacher teaches with heart, enthusiasm and continuous learning, certified as an international yoga teacher by the Asean yoga association. Teachers teach online with thousands of students. Besides, she is also an inspiration to help people practice yoga for a better life. Currently on Sophie's youtube channel there are more than 191,000 subscribers and on the fanpage there are more than 28,000 followers. With these 2 main information pages, people can easily register to try this sport.</p><br>
+        <div class="trainer">
+          <img src="doAn/yoga.jpg" class="imgs" class="hlv" width="550px" style="float: left;">
+          <div class="para">
+            <h1>Yoga by Sophie</h1>
+            <p>Sophie, a Yoga teacher teaches with heart, enthusiasm and continuous learning, certified as an international yoga teacher by the Asean yoga association. Teachers teach online with thousands of students. Besides, she is also an inspiration to help people practice yoga for a better life. Currently on Sophie's youtube channel there are more than 191,000 subscribers and on the fanpage there are more than 28,000 followers. With these 2 main information pages, people can easily register to try this sport.</p><br>
               <button style="font-size: 15px;"><a href="#">More Trainers</a></button>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <div class="table-response">
-        <h1>Best Seller</h1>
-        <div class="best">
-            <table class="table table-responsive">
-                <tr>
-                    <td>
-                        <div class="sell"><figure>
-                            <a href="#"><img src="imgs/bottle6.png" width="300px"></a>
-                            <figcaption>Under Armour 16 oz Protégé Water Bottle<br>$25</figcaption>
-                        </figure>
-                    </div>
-                    </td>
-                    <td>
-                        <div class="sell">
-                            <figure>
-                            <a href=""><img src="imgs/dcu6.jpg"></a>
-                            <figcaption>SKIPPING-ROPE<br>$10</figcaption>
-                        </figure>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="sell">
-                            <figure>
-                            <a href=""><img src="imgs/dcu5.jpg" width="300px" height="300px"></a>
-                            <figcaption>Everlast Mixed Martial Arts Heavy Bag Gloves<br>$31.99</figcaption>
-                        </figure>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="sell">
-                            <figure>
-                                <a href=""><img src="imgs/giay1.webp"></a>
-                                <figcaption>Nike Metcon 8 FlyEase<br>$154.11</figcaption>
-                            </figure>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="sell">
-                            <figure>
-                                <a href=""><img src="imgs/tpcn1.webp"></a>
-                                <figcaption>Ostrovit Vege Protein<br>$23.7</figcaption>
-                            </figure>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+          </div>
         </div>
+      </div>
+      <h1 class="title-shop" id="powder">BEST SELLER</h1>
+      <main class="main bd-grid">
+
+        <article class="card">
+          <div class="card__img">
+              <img src="imgs/bottle4.png" class="img">
+          </div>
+          <div class="card__name">
+              <p>PUMA UNISEX TRAINING WATER BOTTLE</p>
+          </div>
+          <div class="card__precis">
+              <a href="cart.html" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+              
+              <div>
+                  <span class="card__preci card__preci--before">$15.30</span>
+                  <span class="card__preci card__preci--now">$13.00</span>
+              </div>
+              <a href="cart.html" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__img">
+              <img src="imgs/shoe1.png" class="img">
+          </div>
+          <div class="card__name">
+              <p>NIKE AIR MAX APLHA TRAINER 5</p>
+          </div>
+          <div class="card__precis">
+              <a href="cart.html" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+              
+              <div>
+                  <span class="card__preci card__preci--before">$136.00</span>
+                  <span class="card__preci card__preci--now">$106.00</span>
+              </div>
+              <a href="cart.html" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+          </div>
+      </article>
+          <article class="card">
+              <div class="card__img">
+                  <img src="imgs/whey2.png" class="img">
+              </div>
+              <div class="card__name">
+                  <p>MUSCLE MILK PRO SERIRES 50 INTENSE VANILLA POTEIN POWDER</p>
+              </div>
+              <div class="card__precis">
+                  <a href="" class="card__icon" ><ion-icon name="heart-outline"></ion-icon></a>
+                  <div>
+                      <span class="card__preci card__preci--before">$30.00</span>
+                      <span class="card__preci card__preci--now">$25.71</span>
+                  </div>
+                  <a href="" class="card__icon"><ion-icon name="cart-outline"></ion-icon></a>
+              </div>
+          </article>
+
+          
+      </main>
       </div>
       <footer class="footer">
         <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <h4>About us</h4>
-              <ul>
-                <li><a href="#">Facilities</a></li>
-                <li><a href="#">Our Services</a></li>
-                <li><a href="#">Blogs</a></li>
-              </ul>
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a href="service.html">Our Services</a></li>
+                        <li><a href="blog.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Online Shop</h4>
+                    <ul>
+                        <li><a href="shop.html#bottle">Bottles</a></li>
+                        <li><a href="shop.html#shoes">Training Shoes</a></li>
+                        <li><a href="shop.html#powder">Protein Powder</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="aerobics.html">Aerobics</a></li>
+                        <li><a href="boxing.html">Boxing</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <ul class="contact">
+                        <li><span class="glyphicon glyphicon-earphone"></span> 123-456-7890</li>
+                        <li><span class="glyphicon glyphicon-home"></span> 862/B,VTR PLAZA,2nd floor,4th main road,
+                            Tulsi Theater Rd, Marathahalli, Bengaluru,
+                            Karnataka 560037, India</li>
+                        <li></li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="cart.html"><i class="fab fa-facebook-f"></i></a>
+                        <a href="cart.html"><i class="fab fa-twitter"></i></a>
+                        <a href="cart.html"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer-col">
-              <h4>Online shop</h4>
-              <ul>
-                <li><a href="#">Bottles</a></li>
-                <li><a href="#">Equipment</a></li>
-                <li><a href="#">Training Shoes</a></li>
-                <li><a href="#">Protein Powder</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#">HIIT</a></li>
-                <li><a href="#">Kickboxing</a></li>
-                <li><a href="#">Cycling</a></li>
-                <li><a href="#">Yoga</a></li>
-                <li><a href="#">Personal Training</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Contact us</h4>3
-              <ul class="contact">
-                <li><span class="glyphicon glyphicon-earphone"></span>  123-456-7890</li>
-                <li><span class="glyphicon glyphicon-home"></span>  862/B,VTR PLAZA,2nd floor,4th main road, 
-                  Tulsi Theater Rd, Marathahalli, Bengaluru,
-                  Karnataka 560037, India</li>
-                <li></li>
-              </ul>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
         </div>
         <hr>
         <p class="copy">&copy; Prime Fitness Club Ltd. All rights reserved.</p>
-     </footer>
+    </footer>
 </body>
 </html>
